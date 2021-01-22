@@ -1,4 +1,4 @@
-# Auto_MRSB
+# Auto_MRSB 哈尔滨工业大学自动每日上报
 ubuntu系统+chrome浏览器
 
 1.安装selenium
