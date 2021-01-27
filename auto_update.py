@@ -43,11 +43,11 @@ for idx in range(duration):
         browser.find_element_by_xpath("/html/body/div[1]/div[5]/a[2]").click()  # 每日上报
 
         time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[1]/div[2]/div[1]/a/div[1]").click()  # 新增
+        browser.find_element_by_xpath("/html/body/div[1]/div[2]/div[1]/a[1]/div").click()  # 新增
         time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[3]/input").click()  # 我已仔细阅读并同意
+        browser.find_element_by_xpath("/html/body/div[7]/input").click()  # 我已仔细阅读并同意
         time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[5]").click() # 提交
+        browser.find_element_by_xpath("/html/body/div[9]").click() # 提交
 
         time.sleep(1)
         print(name_list[i] + "   " + date_string + "   " + "上报成功")
