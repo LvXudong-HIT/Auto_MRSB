@@ -8,8 +8,8 @@ chrome_options.add_argument('--headless')
 # 模拟浏览器打开网站
 # browser = webdriver.Chrome(executable_path='/usr/lib/chromium-browser/chromedriver')
 duration = 365
-name_list = ['学号']
-password_list = ['密码']
+name_list = ['学号1'， '学号2'， '学号n']
+password_list = ['密码1', '密码2', '密码n']
 
 
 for idx in range(duration):
