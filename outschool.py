@@ -9,8 +9,8 @@ from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 chrome_options.add_argument('--headless')
 resaons = ["吃饭", "看牙齿", "拍证件照", "探访亲友", "购买生活必需品", "买夏天衣服", "找对象", "办电话卡注销", "上家教", "学托福"]
-# name_list = ['学号1', '学号2', '学号n']
-# password_list = ['密码1', '密码2', '密码n']
+name_list = ['学号1', '学号2', '学号n']
+password_list = ['密码1', '密码2', '密码n']
 
 # 模拟浏览器打开网站
 # browser = webdriver.Chrome(executable_path='/usr/lib/chromium-browser/chromedriver')
