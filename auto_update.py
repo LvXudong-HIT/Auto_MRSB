@@ -26,7 +26,7 @@ for idx in range(duration):
                                    executable_path=r'chromedriver的路径')
         browser.get('https://xg.hit.edu.cn/zhxy-xgzs/xg_mobile/shsj/loginChange')
         # 将窗口最大化
-        browser.maximize_window()
+browser.maximize_window()
         time.sleep(1)
         browser.find_element_by_xpath('/html/body/div[1]/div[2]/button[1]').click()
         time.sleep(1)
@@ -40,17 +40,22 @@ for idx in range(duration):
         browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/form/p[5]/button").click()
 
         time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[1]/div[5]/a[2]").click()  # 每日上报
+        browser.find_element_by_xpath("/html/body/div[1]/div[6]/a[2]").click()  # 每日上报
 
         time.sleep(1)
         browser.find_element_by_xpath("/html/body/div[1]/div[2]/div[1]/a[1]/div").click()  # 新增
         time.sleep(1)
+        # browser.find_element_by_xpath("/html/body/div[3]/div[1]/input").send_keys("NanGang")  # address
+        # time.sleep(1)
         browser.find_element_by_xpath("/html/body/div[7]/input").click()  # 我已仔细阅读并同意
         time.sleep(1)
         browser.find_element_by_xpath("/html/body/div[9]").click() # 提交
+        time.sleep(1)
+        browser.find_element_by_xpath("/html/body/div[13]/div[3]/a[2]").click() # 提交
 
         time.sleep(1)
         print(name_list[i] + "   " + date_string + "   " + "上报成功")
         browser.quit()
     
     time.sleep(24*3600) # 间隔一天
+
