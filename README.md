@@ -17,4 +17,4 @@ ubuntu系统+chrome浏览器
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-outschool.py 为自动申请出校，使用方式与autoupdate.py类似
+5. outschool.py 为自动申请出校，使用方式与autoupdate.py类似
