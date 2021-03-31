@@ -20,7 +20,8 @@ for k in range(len(name_list)):
             # date_string = "2021年4月" + str(i) + "日"
             date_string = "2021年" + str(m) + "月" + str(i) + "日"
             browser = webdriver.Chrome(options=chrome_options,
-                                       executable_path=r"/home/wangshuo/Downloads/chromedriver_linux64/chromedriver")
+                                       # 替换以下chromedriver执行路径
+                                       executable_path=r'chromedriver的路径')
             browser.get('https://xg.hit.edu.cn/zhxy-xgzs/xg_mobile/shsj/loginChange')
             # 将窗口最大化
             browser.maximize_window()
