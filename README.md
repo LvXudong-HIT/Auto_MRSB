@@ -14,4 +14,5 @@ ubuntu系统+chrome浏览器
 3.在auto_update.py中更改chromedriver的路径，以及自己的学号和密码
 
 4.终端运行python auto_update.py，默认每日上传一次
+
 5.outschool.py 为自动申请出校，使用方式与autoupdate.py类似
