@@ -38,6 +38,11 @@ browser.maximize_window()
 
         time.sleep(1)
         browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/form/p[5]/button").click()
+        
+        try:
+            browser.find_element_by_xpath("/html/body/div[3]/button").click()
+        except:
+            time.sleep(1)
 
         time.sleep(1)
         browser.find_element_by_xpath("/html/body/div[1]/div[6]/a[2]").click()  # 每日上报
