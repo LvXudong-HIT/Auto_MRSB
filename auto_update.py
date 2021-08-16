@@ -19,14 +19,14 @@ for idx in range(duration):
     month = current_date.month
     day = current_date.day
 
-    for i in range(len(name_list)):
+    for i in range(3, len(name_list)):
         date_string = str(year) + "年" + str(month) + "月" + str(day) + "日"
         browser = webdriver.Chrome(options=chrome_options,
                                    # 替换以下chromedriver执行路径
-                                   executable_path=r'chromedriver的路径')
+                                   executable_path=r'/home/wangshuo/Downloads/chromedriver_linux64/chromedriver')
         browser.get('https://xg.hit.edu.cn/zhxy-xgzs/xg_mobile/shsj/loginChange')
         # 将窗口最大化
-browser.maximize_window()
+        browser.maximize_window()
         time.sleep(1)
         browser.find_element_by_xpath('/html/body/div[1]/div[2]/button[1]').click()
         time.sleep(1)
@@ -38,27 +38,27 @@ browser.maximize_window()
 
         time.sleep(1)
         browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div[3]/div/form/p[5]/button").click()
-        
+
+        time.sleep(1)
         try:
             browser.find_element_by_xpath("/html/body/div[3]/button").click()
         except:
             time.sleep(1)
 
-        time.sleep(1)
         browser.find_element_by_xpath("/html/body/div[1]/div[6]/a[2]").click()  # 每日上报
 
         time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[1]/div[2]/div[1]/a[1]/div").click()  # 新增
+        browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div/div/div[1]/div[17]/div[2]/div/div/span").click()  # location
         time.sleep(1)
-        # browser.find_element_by_xpath("/html/body/div[3]/div[1]/input").send_keys("NanGang")  # address
-        # time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[7]/input").click()  # 我已仔细阅读并同意
-        time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[9]").click() # 提交
-        time.sleep(1)
-        browser.find_element_by_xpath("/html/body/div[13]/div[3]/a[2]").click() # 提交
 
         time.sleep(1)
+        browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[63]").click()
+        time.sleep(1)
+
+        time.sleep(1)
+        browser.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[64]/div[1]/div[1]").click()  # location
+        time.sleep(1)
+
         print(name_list[i] + "   " + date_string + "   " + "上报成功")
         browser.quit()
     
